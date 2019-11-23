@@ -2,7 +2,6 @@ package com.example.tubes03_fix;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +10,12 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.manga.ramt57.mangareader.trend.Chapterlist;
-import com.manga.ramt57.mangareader.trend.R;
-import com.manga.ramt57.mangareader.trend.pojomodels.Mangalist;
+import com.example.tubes03_fix.Chapterlist;
+import com.example.tubes03_fix.R;
+import com.example.tubes03_fix.Mangalist;
 
 import java.util.ArrayList;
-/**
- * Created by user on 15-09-2017.
- */
+import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
     static ArrayList<Mangalist> mnga=new ArrayList<>();

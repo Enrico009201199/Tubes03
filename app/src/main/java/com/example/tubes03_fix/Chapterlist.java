@@ -1,6 +1,7 @@
 package com.example.tubes03_fix;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,7 +15,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
@@ -27,6 +33,8 @@ import com.bumptech.glide.request.RequestOptions;
 import com.example.tubes03_fix.ChapterAdapter;
 import com.example.tubes03_fix.ChapterDetail;
 import com.example.tubes03_fix.ImageModel;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.gson.Gson;
 import com.tonyodev.fetch.Fetch;
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 

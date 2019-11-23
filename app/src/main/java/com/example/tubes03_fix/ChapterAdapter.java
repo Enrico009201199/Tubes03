@@ -1,17 +1,17 @@
 package com.example.tubes03_fix;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.manga.ramt57.mangareader.trend.R;
+import com.example.tubes03_fix.R;
 
 import java.util.ArrayList;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 
 /**
@@ -23,6 +23,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.MyViewHo
     static viewchapter listener;
     Context ctx;
     static DownloadCHapter listener4;
+
     public  ChapterAdapter(ArrayList<String > var){
         chapterlist=var;
     }

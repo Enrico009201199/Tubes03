@@ -1,13 +1,14 @@
 package com.example.tubes03_fix;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.manga.ramt57.mangareader.trend.PageFragment;
-
+import com.example.tubes03_fix.PageFragment;
 import java.util.ArrayList;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+
 /**
  * Created by user on 19-09-2017.
  */
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 public class PagerAdapter extends FragmentStatePagerAdapter implements PageFragment.ItemClick{
     ArrayList<String> url=new ArrayList<>();
     fragmentClickListener listener;
-    public PagerAdapter(FragmentManager fm,ArrayList<String> imgurl) {
+    public PagerAdapter(FragmentManager fm, ArrayList<String> imgurl) {
         super(fm);
         this.url=imgurl;
     }
